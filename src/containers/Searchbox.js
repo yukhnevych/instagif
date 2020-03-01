@@ -16,6 +16,7 @@ const Searchbox = ({
             placeholder="Search Giphy"
             value={ query }
             onChange={ e => setSearchQuery(e.target.value) }
+            onKeyPress={ e => e.key === 'Enter' && fetchGifs(query) }
         />
     </div>
     <div className="control">

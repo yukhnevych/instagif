@@ -1,4 +1,4 @@
-import { ACTION_TYPE } from '../../constants';
+import { SET_SEARCH_QUERY } from '../actionTypes';
 
 const initialState = {
     query: ''
@@ -6,7 +6,7 @@ const initialState = {
 
 export const searchReducer = (state = initialState, { type, payload }) => {
     switch(type) {
-        case ACTION_TYPE.SET_SEARCH_QUERY:
+        case SET_SEARCH_QUERY:
             return {
                 query: payload
             };
