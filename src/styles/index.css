@@ -1,0 +1,11 @@
+html.has-navbar-fixed-top {
+    padding: 75px;
+}
+
+.is-nav-centered {
+    justify-content: center;
+}
+
+.card {
+    margin-bottom: 20px;
+}
