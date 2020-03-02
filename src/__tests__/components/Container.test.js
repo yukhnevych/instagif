@@ -33,7 +33,7 @@ describe('Container component', () => {
     it('should render empty component', () => {
         const { enzymeWrapper } = setup();
 
-        expect(enzymeWrapper.find('Empty').text()).toEqual('Empty');
+        expect(enzymeWrapper.find('Empty').text()).toEqual('Nothing found...');
     });
 
     it('should render loader component', () => {
@@ -45,7 +45,7 @@ describe('Container component', () => {
     it('should render error component', () => {
         const { enzymeWrapper } = setup(STATUS.ERROR);
 
-        expect(enzymeWrapper.find('Error').text()).toEqual('Error');
+        expect(enzymeWrapper.find('Error').text()).toEqual('Something went wrong...');
     });
 
     it('should render list component', () => {

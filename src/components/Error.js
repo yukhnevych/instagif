@@ -1,3 +1,3 @@
 import React from 'react';
 
-export const Error = () => <div className="error">Error</div>;
+export const Error = () => <div className="error">Something went wrong...</div>;
