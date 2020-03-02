@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 import { fetchGifs, setSearchQuery } from '../store/actions';
 
-const Searchbox = ({
+export const Searchbox = ({
     query,
     fetchGifs,
     setSearchQuery

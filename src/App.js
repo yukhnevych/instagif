@@ -1,10 +1,10 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 
-import { ConnectedSearchbox } from './Searchbox';
-import { ConnectedContainer } from './Container';
-import { ConnectedCounter } from './Counter';
-import { configureStore } from '../store';
+import { ConnectedSearchbox } from './containers/Searchbox';
+import { ConnectedContainer } from './containers/Container';
+import { ConnectedCounter } from './containers/Counter';
+import { configureStore } from './store';
 
 const store = configureStore();
 

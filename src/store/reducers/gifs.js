@@ -14,15 +14,14 @@ const initialState = {
     ids: [],
     total: 0,
     current: 0
-}
+};
 
 const formatResponse = data => data.reduce((acc, item) => ({
     ...acc,
     [item.id]: {
         id: item.id,
         title: item.title,
-        image: item.images.downsized_large.url,
-        time: item.import_datetime
+        image: item.images.downsized_large.url
     }
 }), {});
 

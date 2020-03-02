@@ -9,7 +9,7 @@ import { Loader } from '../components/Loader';
 import { Empty } from '../components/Empty';
 import { Error } from '../components/Error';
 
-class Container extends Component {
+export class Container extends Component {
     componentDidMount() {
         this.props.fetchGifs(this.props.query);
 
@@ -27,16 +27,16 @@ class Container extends Component {
         const gifs = this.props.gifs;
         const { current, status } = gifs;
 
+        if (status === STATUS.ERROR) {
+            return <Error />
+        }
+
         if (current === 0) {
             if (status === STATUS.LOADING) {
                 return <Loader />;
             }
 
             return <Empty />
-        }
-
-        if (status === STATUS.ERROR) {
-            return <Error />
         }
 
         return <Fragment>
